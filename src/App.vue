@@ -1,7 +1,6 @@
 <template>
   <div class="container">
-    <!-- <h1>Hello World</h1> -->
-    <Header/>
+    <Header title="Task Tacker"/>
   </div>  
 </template>
 
@@ -11,8 +10,35 @@ import Header from './components/Header.vue'
 export default {
   name: 'App',
   components: {
-    Header
+    Header,
   },
+  data() {
+    return {
+      tasks: []
+    }
+  },
+  created() {
+    this.tasks = [
+      {
+        id: 1,
+        text: 'Doctors Appoinments',
+        day: 'March 1st at 2:30pm',
+        reminder: true,
+      },
+      {
+        id: 2,
+        text: 'PEtAppoinments',
+        day: 'March 3st at 1:30pm',
+        reminder: true,
+      },
+      {
+        id: 3,
+        text: 'School Meeting',
+        day: 'March 2st at 3:30pm',
+        reminder: true,
+      }
+    ] 
+  }
 }  
 </script>
 

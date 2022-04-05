@@ -1,13 +1,23 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
+        <Button text="Add Task" color="green"/>
+        <!-- <Button text="Update Task" color="blue"/>
+        <Button text="Delete Task" color="Red"/> -->
     </header>
 </template>
 
 <script>
+import Button from './Button.vue'
+
 export default {
     name: 'Header',
-    props: ['title']
+    props: {
+        title: String,
+    },
+    components: {
+        Button,
+    }, 
 }
 </script>
 
