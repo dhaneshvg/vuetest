@@ -17,6 +17,12 @@
       "text": "Food shopping",
       "day": "March 7th at 2:00pm",
       "reminder": false
+    },
+    {
+      "text": "Puchase a car",
+      "day": "April 10th at 2:45pm",
+      "reminder": true,
+      "id": "lpNBGw9"
     }
   ]
 }
